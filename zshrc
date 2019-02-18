@@ -70,7 +70,6 @@ plugins=(
   zsh-syntax-highlighting
   kubectl
   minikube
-  zsh-history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
