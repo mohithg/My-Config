@@ -70,6 +70,7 @@ plugins=(
   zsh-syntax-highlighting
   kubectl
   minikube
+  zsh-history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,7 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.bash_profile
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
