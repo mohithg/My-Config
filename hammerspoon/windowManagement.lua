@@ -1,0 +1,23 @@
+local config = require('config')
+local utils = require('utils')
+
+hs.hotkey.bind( config.keys.ctacm, "Right", function()
+    local win = hs.window.frontmostWindow()
+    win:setFullScreen(false)
+    utils.sleep(1)
+    local new_wind = win:moveOneScreenEast()
+	new_wind:setFullScreen(true)
+end)
+
+hs.hotkey.bind( config.keys.ctacm, "Left", function()
+    local win = hs.window.frontmostWindow()
+    win:setFullScreen(false)
+    utils.sleep(1)
+    local new_wind = win:moveOneScreenWest()
+    new_wind:setFullScreen(true)
+end)
+
+hs.hotkey.bind( config.keys.ctacm, "f", function()
+    local win = hs.window.frontmostWindow()
+    win:toggleFullScreen()
+end)
