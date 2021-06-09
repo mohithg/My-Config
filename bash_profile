@@ -58,8 +58,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-# the fuck
-eval $(thefuck --alias)
-
 # Java more memory
 # export _JAVA_OPTIONS="-Xmx15G -XX:MaxMetaspaceSize=8G"
