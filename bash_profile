@@ -13,7 +13,15 @@ alias gpl="git pull origin"
 export PATH=~/bin:$PATH
 
 # Py env
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+# Load pyenv into the shell by adding
+# the following to ~/.zshrc:
+
 eval "$(pyenv init -)"
+
 eval "$(pyenv virtualenv-init -)"
 
 # z
