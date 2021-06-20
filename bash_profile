@@ -60,3 +60,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Java more memory
 # export _JAVA_OPTIONS="-Xmx15G -XX:MaxMetaspaceSize=8G"
+
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
