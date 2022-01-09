@@ -18,3 +18,14 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
     hs.notify.new({title="Hammerspoon", informativeText="Hello World"}):send()
 end)
 
+local hyper = {"cmd", "alt", "ctrl"}
+
+-- this one for lock the screen
+hs.hotkey.bind(hyper, "l", function()
+  hs.caffeinate.lockScreen()
+end)
+-- this one is for putting the system to sleep
+hs.hotkey.bind(hyper, "z", function()
+  hs.caffeinate.systemSleep()
+end)
+
